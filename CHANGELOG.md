@@ -1,6 +1,27 @@
 Docker StatsD InfluxDB Grafana image
 -----------------------------------
 
+## v3.0
+Upgraded Grafana 5.3.2
+Upgraded Telegraf 1.8.2.1
+Upgraded InfluxDB 1.6.4
+Upgraded Chronograf 1.6.2
+
+Automation and Integration:
+    InfluxDB Database creation
+    Grafana Data Source creation based on InfluxDB
+    Grafana Dashboard automated
+    Telegraf configuration to pull data to CSR1000v 
+        Interface Bandwith monitoring
+        Uptime monitoring
+        Number of SIP calls monitoring
+        
+
+
+## Forked - Goals
+
+* Some improvements regarding how things are automated.
+
 ## v2.1.0 (2018-06-11)
 
 * Upgraded Grafana 5.1
