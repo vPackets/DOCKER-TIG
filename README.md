@@ -36,13 +36,7 @@ You can replace `latest` with the desired version listed in changelog file.
 To stop the container launch:
 
 ```sh
-docker stop docker-statsd-influxdb-grafana
-```
-
-To start the container again launch:
-
-```sh
-docker start docker-statsd-influxdb-grafana
+docker stop vpackets-tools
 ```
 
 ## Mapped Ports
