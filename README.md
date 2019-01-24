@@ -4,15 +4,16 @@
 
 [![CircleCI](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana.svg?style=svg)](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana)
 
+## Forker from Samuele Bistoleti https://github.com/samuelebistoletti/docker-statsd-influxdb-grafana
+
 ## Versions
 
 ### Warning, breaking change: upgrade from version 1.0.x of this image is not supported, all persisted data in volumes will be lost if you delete the container.
 
-* Docker Image:      2.1.0
-* Ubuntu:            16.04
-* InfluxDB:          1.2
-* Telegraf (StatsD): 1.2
-* Grafana:           4.1.1
+* Ubuntu:            18.04
+* InfluxDB:          1.6.4
+* Telegraf (StatsD): 1.8.2.1
+* Grafana:           5.3.2
 
 ## Quick Start
 
@@ -21,13 +22,13 @@ To start the container the first time launch:
 ```sh
 docker run --ulimit nofile=66000:66000 \
   -d \
-  --name docker-statsd-influxdb-grafana \
+  --name vpackets-tools \
   -p 3003:3003 \
   -p 3004:8888 \
   -p 8086:8086 \
   -p 22022:22 \
   -p 8125:8125/udp \
-  samuelebistoletti/docker-statsd-influxdb-grafana:latest
+  vpackets-tools:latest
 ```
 
 You can replace `latest` with the desired version listed in changelog file.
