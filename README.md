@@ -22,13 +22,13 @@ To start the container the first time launch:
 ```sh
 docker run --ulimit nofile=66000:66000 \
   -d \
-  --name vpackets-tools \
+  --name vpackets-tig \
   -p 3003:3003 \
   -p 3004:8888 \
   -p 8086:8086 \
   -p 22022:22 \
   -p 8125:8125/udp \
-  vpackets/tools:latest
+  vpackets/tig:latest
 ```
 
 You can replace `latest` with the desired version listed in changelog file.
